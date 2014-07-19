@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-sudo cp /etc/apt/sources.list /vagrant/sources.list.bak
-sudo cp /vagrant/mirrors.txt /etc/apt/sources.list
-sudo cat /vagrant/sources.list.bak >> /etc/apt/sources.list
 apt-get update
 apt-get install -y apache2
 apt-get install -y php5
